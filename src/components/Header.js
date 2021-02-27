@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Avatar } from '@material-ui/core';
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import SearchIcon from '@material-ui/icons/Search';
+import HelpOutLineIcon from '@material-ui/icons/HelpOutline';
 
 function Header() {
   return (
@@ -17,7 +18,9 @@ function Header() {
         <SearchIcon />
         <input placeholder="Search Katte.io" />
       </HeaderSearch>
-      {/*Header Right */}
+      <HeaderRight>
+        <HelpOutLineIcon />
+      </HeaderRight>
     </HeaderContainer>
   );
 }
@@ -72,5 +75,16 @@ const HeaderSearch = styled.div`
     min-width: 30vw;
     outline: 0;
     color: white;
+  }
+`;
+
+const HeaderRight = styled.div`
+  flex: 0.3;
+  display: flex;
+  align-items: flex-end;
+
+  > .MuiSvgIcon-root {
+    margin-left:auto;
+    margin-right: 20px;
   }
 `;
