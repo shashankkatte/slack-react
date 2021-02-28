@@ -32,7 +32,7 @@ function Chat() {
 
   return (
     <ChatContainer>
-      { (roomDetails && roomMessages ? (
+      {roomDetails && roomMessages ? (
         <>
           <Header>
             <HeaderLeft>
